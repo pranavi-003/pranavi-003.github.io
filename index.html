@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equip="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Registration Form </title>
+
+    </head>
+    <body>
+        <div class="relative flex min-h screen flex-col overflow-hidden border-gray-700 bg-gray-400 py-6 bg-black-50"style="border-gray-700">
+            <div
+            class="relative bg-black px-6 pt-5 pb-5 shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+            <div class="mx-auto -w-md">
+                <h1 class="text-3xl text-center text-gray-500  font-bold color-white leading-tight">
+                    Registration Form
+                </h1>
+                <div class="divide-y divide-gray-300/50">
+                    <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
+                        <form id="user-form">
+                            <label for="name" class="text-md w-40 inline-block font-medium leading-5 text-gray-300">
+                                Name 
+                            </label>
+                            <input required type="text" id="name" name="name" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-500 focus :invalid:border-pink-500 focus:invalid:ring-pink-500"
+                            placeholder="Enter Full Name"></br>
+
+                            <label for="email" class="text-md w-40 initial-block font-medium leading-5 text-gray-300">
+                                Email      
+                            </label>
+                            <input required type="email" id="email" name="email" style="margin-left:120px" class="bg-gray-300 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-500
+                            focus:invalid:border-pink-500 focus:invalid:ring-pink-500" placeholder="Enter Email" ></br>
+                            <label for="password" class="text-md w-40 inline-block font-medium leading-5 text-gray-300">
+                                Password
+                            </label>
+                            <input required type="password" id="password" name="password" class="bg-gray-300 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-500
+                            focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                            placeholder="Enter Password" ></br>
+                            <label for="dob" class="text-md w-40 inline-block font-medium leading-5 text-gray-300">
+                                Date Of Birth
+                            </label>
+                            <input required type="date" id="dob" class="bg-gray-300 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-500
+                            focus:invalid:border-pink-500 focus:invalid:ring-pink-500" ></br>
+                            <label for="acceptTerms"
+                            class="text-md w-50 inline-block font-medium leading-5 text-gray-300">
+                            Accept Terms & Conditions
+                            </label>
+                            <input type="checkbox" id="acceptTerms" name="acceptTerms"
+                            class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-300 focus:placeholder-gray-500"></br>
+                            <button type="submit"
+                            class="w-fit rounded-lg shadow-md px-8 py-4 bg-white text-black items-centre hover:bg-gray-600 centre focus:outline-none focus:shadow-outline tansition" 
+                            onclick="agevalidation()">Submit</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+            <div 
+            class="relative bg-white px-6 pt-10 pb-8 shadow-xl bg-gray-500 ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+            <div class="mx-auto">
+                <h2 class="text-3xl text-center font-bold leading-tight" style="color:gray; "> Entries</h2>
+                <div style="border: 1px solid burlywood padding-15px ; border-width: 3px;
+                border-radius: 10px;" id="user-entries"class=" bg-black border-b dark:bg-gray-300 dark:border-gray-500"</div>
+
+            </div>
+
+            </div>
+        
+        <script src="index 2.js"></script>
+       
+    </body>
+</html>
